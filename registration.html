@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Registration page</title>
+	<script src="https://kit.fontawesome.com/5a6dccc87a.js" crossorigin="anonymous"></script>
+	<style>
+		body {
+			margin: 0px;
+			padding: 0px;
+			background-color: #8A7EC6;
+			display: flex;
+			justify-content: center;
+		}
+
+		input {
+			color: grey;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			height: 40px;
+			width: 300px;
+		}
+
+		button {
+			height: 45px;
+			width: 130px;
+			border-radius: 30px;
+			border: none;
+		}
+
+		button:hover {
+			background-color: #03C03C;
+			color: white;
+		}
+
+		.send-otp {
+			background-color: white;
+			color: #3C3C3C;
+		}
+
+		#email,
+		#firstname,
+		#lastname,
+		#country,
+		#password,
+		#confirm-password,
+		#profile,
+		#education,
+		#contactNo,
+		#otp,
+		#profile-image,
+		#skills,
+		#workExperience {
+			padding-left: 10px;
+		}
+
+		.term-box {
+			height: 13px;
+			width: 13px;
+		}
+
+		.register{
+			width: 300px;
+			height: 40px;
+			color: white;
+			border: none;
+			background-color: #8B3DFF;
+			text-align: center;
+		}
+
+		.middle-section {
+			border-radius: 10px;
+			height: 600px;
+			width: 900px;
+			display: flex;
+			margin-top: 30px;
+			justify-content: center;
+		}
+
+		.middle-left-section {
+			background-color: white;
+			width: 50%;
+			flex-direction: column;
+			align-items: flex-start;
+			justify-content: center;
+		}
+
+		.left-registration-form,
+		.right-registration-form {
+			display: flex;
+			justify-content: center;
+		}
+
+		.middle-right-section {
+			background-color: #463ACB;
+			width: 50%;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="middle-section">
+		<div class="middle-left-section">
+			<div style="display: flex;
+			flex-direction: column;
+			padding-left: 67px;">
+				<h2 style="font-family: arial , sans-serif; color:#463ACB;"> Create your account</h2>
+				<p style="font-family: arial , sans-serif; color:#463ACB;">Create an account to access the resume</p>
+			</div>
+			<div class="left-registration-form">
+				<form action="registration.php" method="POST">
+					<label for="email"></label><br>
+					<input type="text" id="email" name="email" placeholder="Email">
+					<br>
+					<br>
+
+					<div style="display: flex;">
+						<label for="firstname"></label><br>
+						<input type="text" id="firstname" name="firstname" placeholder="First name"
+							style="width: 130px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+						<label for="lastname"></label><br>
+						<input type="text" id="lastname" name="lastname" placeholder="Last name"
+							style="width: 130px;"><br>
+					</div>
+					<label for="country"></label><br>
+					<input type="text" id="country" name="country" placeholder="Country"><br>
+
+					<label for="password"></label><br>
+					<input type="password" id="password" name="password" placeholder="Password"><br>
+
+					<label for="confirm-password"></label><br>
+					<input type="password" id="confirm-password" name="confirm-password"
+						placeholder="Confirm Password"><br><br>
+
+
+			</div>
+		</div>
+
+		<div class="middle-right-section">
+			<div style="display: flex;
+			flex-direction: column;
+			padding-left: 67px;">
+				<h2 style="font-family: arial , sans-serif; color:white;"> Personal Details </h2>
+				<br>
+
+			</div>
+			<div class="right-registration-form">
+				<div>
+					<label for="profile"></label><br>
+					<input type="text" id="profile" name="profile" placeholder="Profile">
+					<br>
+
+					<label for="education"></label><br>
+					<input type="text" id="education" name="education" placeholder="Education">
+					<br>
+					<br>
+
+					<div style="display: flex;">
+						<label for="contactNo"></label><br>
+						<input type="number" id="contactNo" name="contactNo" placeholder="+91"
+							style="width: 130px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+						<label for="otp"></label><br>
+						<input type="number" id="otp" name="otp" placeholder="OTP"
+							style="width: 60px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+						<label for="profile-image"></label><br>
+						<input type="text" id="profile-image" name="profile-image" placeholder="img"
+							style="width: 33px;"><br>
+					</div>
+
+					<br>
+
+					<button class="send-otp">
+						Send OTP
+					</button>
+					<br>
+
+					<label for="skills"></label><br>
+					<input type="text" id="skills" name="skills" placeholder="Skills">
+					<br>
+
+					<label for="workExperience"></label><br>
+					<input type="text" id="workExperience" name="workExperience" placeholder="Work Experience">
+					<br>
+					<br>
+					<input type="checkbox" id="term-box" name="term-box" class="term-box">
+					<label for="term-box"> <a style="text-decoration: none ; color:white"
+							href="https://en.wikipedia.org/wiki/Terms_of_service" class="forget">Terms &
+							Condition</a></label><br>
+					<br>
+					<input type="submit" value="Register" name="submit" class="register"><br><br>
+
+				</div>
+				</form>
+			</div>
+
+		</div>
+	</div>
+</body>
+
+</html>
